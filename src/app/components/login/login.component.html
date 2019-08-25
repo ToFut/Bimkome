@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  html, body, h1, h2, h3, h4, h5 {
+    font-family: Assistant, Segoe UI
+  }
+</style>
+
+<div class="wrapper">
+  <div class="container">
+    <a routerLink="/homePage"><img  class="logo" src="../../../assets/logo.jpg"></a>
+
+    <form class="form">
+      <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="email"  type="text" placeholder="Email">
+      <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="password"  type="password" placeholder="Password">
+
+      <button type="submit" (click)="auth.emailPasswwordLogin(email , password)" id="login-button">Login</button><br>
+      <label class="join" routerLink="/signUp" >Admin panel </label>
+
+    </form>
+
+    <div>
+      <div class="flex">
+
+
+        <button type="submit" (click)="auth.googleLogin()" class="loginBtn loginBtn--google">
+          Login with Google
+        </button>
+      </div>
+    </div>
+
+
+
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+  </div>
+</div>

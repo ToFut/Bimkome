@@ -1,0 +1,15 @@
+.fixedButton {
+  top: 85%;
+  color: #25d366;
+  position: fixed;
+  right: 20px;
+  font-size: 1.3em;
+}
+.green {
+  color: #25d366;
+}
+.addVideo {
+  position: fixed;
+  z-index: 99999;
+
+}
